@@ -11,15 +11,38 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("*** Linked list ***");
             CustomLinkedList list = new CustomLinkedList();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            list.Display();
-           list.RemoveFirstNode();
-            list.Display();
-            list.RemoveLastNode();
-            list.Display();
+            Console.WriteLine("Take 1 from given : \n" +
+                " 1) Custom Linked List \n 2) Custom Stack DataSturucture");
+            int select = Convert.ToInt32(Console.ReadLine());
+            switch (select)
+            {
+                case 1:
+                    list.Add(56);
+                    list.Add(30);
+                    list.Add(70);
+                    list.Display();
+                    list.RemoveFirstNode();
+                    list.Display();
+                    list.RemoveLastNode();
+                    list.Display();
+                    break;
+
+                case 2:
+                    Console.WriteLine(" *** Stack DAtaStructure ***");
+                    CustomStack stack = new CustomStack();
+                    stack.Push(56);
+                    stack.Push(30);
+                    stack.Push(70);
+                    stack.Display();
+                    stack.Pop();
+                    stack.Display();
+                    stack.Peek();
+                    stack.Display();
+                    break;
+
+            }
         }
     }
 }

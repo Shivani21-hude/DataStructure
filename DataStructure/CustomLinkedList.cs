@@ -41,7 +41,7 @@ namespace DataStructure
                 Node temp = this.head;
                 while (temp != null)
                 {
-                    Console.WriteLine(temp.data + " ");
+                    Console.Write(temp.data + " ");
                     temp = temp.next;
                 }
             }
