@@ -14,7 +14,7 @@ namespace DataStructure
             Console.WriteLine("*** Linked list ***");
             CustomLinkedList list = new CustomLinkedList();
             Console.WriteLine("Take 1 from given : \n" +
-                " 1) Custom Linked List \n 2) Custom Stack DataSturucture");
+                " 1) Custom Linked List \n 2) Custom Stack DataSturucture \n 3) Custom Queue dataStructure");
             int select = Convert.ToInt32(Console.ReadLine());
             switch (select)
             {
@@ -30,7 +30,7 @@ namespace DataStructure
                     break;
 
                 case 2:
-                    Console.WriteLine(" *** Stack DAtaStructure ***");
+                    Console.WriteLine("\n *** Stack DAtaStructure ***");
                     CustomStack stack = new CustomStack();
                     stack.Push(56);
                     stack.Push(30);
@@ -40,6 +40,17 @@ namespace DataStructure
                     stack.Display();
                     stack.Peek();
                     stack.Display();
+                    break;
+
+                case 3:
+                    Console.WriteLine("\n *** Queue DataStructure ***");
+                    Custom_Queue queue = new Custom_Queue();
+                    queue.Queue(56);
+                    queue.Queue(30);
+                    queue.Queue(70);
+                    queue.Display();
+                    queue.Dequeue();
+                    queue.Display();
                     break;
 
             }
