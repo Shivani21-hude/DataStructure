@@ -48,21 +48,14 @@ namespace DataStructure
 
         public void Dequeue()
         {
-            Console.WriteLine("\n ==> Dequeue last element ");
-            if(this.head == null)
+            Console.WriteLine("\n ==> After removing first node ");
+            if (this.head == null)
             {
-                Console.WriteLine("Queue is empty ");
+                Console.WriteLine("queue is empty ");
             }
-            else
-            {
-                Node temp=this.head;
-                while (temp.next.next != null)             //56 30 70...  after 30 next.next is null so condtion becomes false 
-                {                                                        // so it wll not go for 70
-                   temp=temp.next;                        
-                  
-                }
-                temp.next = null;               
-            }
+            this.head = head.next;
+            Console.WriteLine("Dequeue means removing 1st element : " +this.head);
         }
+        
     }
 }
