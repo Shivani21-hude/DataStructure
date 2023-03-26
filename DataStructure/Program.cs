@@ -14,7 +14,8 @@ namespace DataStructure
             Console.WriteLine("*** Linked list ***");
             CustomLinkedList list = new CustomLinkedList();
             Console.WriteLine("Take 1 from given : \n" +
-                " 1) Custom Linked List \n 2) Custom Stack DataSturucture \n 3) Custom Queue dataStructure");
+                " 1) Custom Linked List \n 2) Custom Stack DataSturucture \n 3) Custom Queue dataStructure" +
+                "\n 4) Built in Linked List  ");
             int select = Convert.ToInt32(Console.ReadLine());
             switch (select)
             {
@@ -51,6 +52,10 @@ namespace DataStructure
                     queue.Display();
                     queue.Dequeue();
                     queue.Display();
+                    break;
+
+                case 4:
+                    BulitIn_LinkedList.List();
                     break;
 
             }
