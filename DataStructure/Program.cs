@@ -11,7 +11,7 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*** Linked list ***");
+           
             CustomLinkedList list = new CustomLinkedList();
             Console.WriteLine("Take 1 from given : \n" +
                 " 1) Custom Linked List \n 2) Custom Stack DataSturucture \n 3) Custom Queue dataStructure" +
@@ -21,6 +21,7 @@ namespace DataStructure
             switch (select)
             {
                 case 1:
+                    Console.WriteLine("\n *** Linked List ***);
                     list.Add(56);
                     list.Add(30);
                     list.Add(70);
@@ -62,6 +63,7 @@ namespace DataStructure
                 case 5:
                     BuitIn_Stack.Stack();
                     break;
+
 
                 case 6:
                     BuiltIn_Queue.Queue();
