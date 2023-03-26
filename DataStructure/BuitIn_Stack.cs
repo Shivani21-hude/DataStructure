@@ -10,6 +10,7 @@ namespace DataStructure
     {
         public static void Stack()
         {
+            Console.WriteLine("Adding elements using Push ");
             Stack<int> stack=new Stack<int>();
             stack.Push(10);
             stack.Push(20);
@@ -20,7 +21,7 @@ namespace DataStructure
                 Console.WriteLine(i);
             }
             int pop = stack.Pop();
-            Console.WriteLine("popped element : " +pop );
+            Console.WriteLine("\n popped element : " +pop );
         }
     }
 }
