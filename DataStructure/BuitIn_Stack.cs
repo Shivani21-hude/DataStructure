@@ -22,6 +22,8 @@ namespace DataStructure
             }
             int pop = stack.Pop();
             Console.WriteLine("\n popped element : " +pop );
+
+           
         }
     }
 }
