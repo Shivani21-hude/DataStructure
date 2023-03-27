@@ -54,7 +54,7 @@ namespace DataStructure
                 Console.WriteLine("queue is empty ");
             }
             this.head = head.next;
-            Console.WriteLine("Dequeue means removing 1st element : " +this.head);
+            Console.WriteLine("Dequeue means removing 1st element : " + this.head);
         }
         
     }
